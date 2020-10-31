@@ -143,4 +143,6 @@ app.get("/messages/search", (req, res) => {
 
 //listening port
 
-app.listen(3000);
+app.listen(process.env.PORT, function(){
+  console.log("Server is listening");
+});
